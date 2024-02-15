@@ -55,8 +55,8 @@ Here are the writeups of my solutions levels I cleared.
 
 2.
 
-- Arbitrum
-- Sepolia
+- Arbitrum https://arbiscan.io/address/0xeab9c7ac697408fd1581494577c7c0716c3b75e6#code
+- Sepolia https://sepolia.etherscan.io/address/0x34d130b174f4a30a846fed7c02fcf53a19a4c2b6#code
 
 3.
 
@@ -282,11 +282,35 @@ Now we have the `inputData` value → `0x5a780edd0000000000000000000000000000000
 
 ## Challenge 2
 
+- It is about knowing the difference between what is a Security Audit and Security Review is.
+  Actually, a smart contract review does not guarantee that the smart contract will be bug free in its code. As vector of attacks constantly change, and due to proxies, the code can be updated and the Audit will be outdated. So in smart contract security research terms, a security review is more appropriate.
+
 ### Contract
+
+<br/>
+<p align="center">
+<img src="./Challenge_2/00_contract.png" width="900" alt="Security Challenges">
+</p>
+<br/>
 
 ### Solution
 
+- `weCallItSecurityReview` = [Up to you to choose the right answer !! 😛]
+- `Twitter handle` = `@xxxxxxx`
+
+<br/>
+<p align="center">
+<img src="./Challenge_2/solve_challenge2.png" width="900" alt="Security Challenges">
+</p>
+<br/>
+
 ### NFT challenge 2
+
+<br/>
+<p align="center">
+<img src="./images/NFT_challenge_2.avif" width="200" alt="Security Challenges">
+</p>
+<br/>
 
 ## Challenge 3
 
@@ -355,8 +379,8 @@ Now we have the `inputData` value → `0x5a780edd0000000000000000000000000000000
 
 2.
 
-- Arbitrum
-- Sepolia
+- Arbitrum https://arbiscan.io/address/0xeab9c7ac697408fd1581494577c7c0716c3b75e6#code
+- Sepolia https://sepolia.etherscan.io/address/0x34d130b174f4a30a846fed7c02fcf53a19a4c2b6#code
 
 3.
 
@@ -582,11 +606,35 @@ function getSignatureTwo(uint256 nine, address contractAddress) public pure retu
 
 ## チャレンジ 2
 
+- セキュリティ監査とセキュリティレビューの違いを知ることについてです。
+  実際、スマートコントラクトのレビューは、スマートコントラクトのコードがバグフリーであることを保証するものではありません。攻撃ベクトルは常に変化し、プロキシを介してコードが更新される可能性があるため、監査は時代遅れになる可能性があります。したがって、スマートコントラクトのセキュリティ研究の用語では、セキュリティレビューの方が適切です。
+
 ### コントラクト
+
+<br/>
+<p align="center">
+<img src="./Challenge_2/00_contract.png" width="900" alt="Security Challenges">
+</p>
+<br/>
 
 ### 解決策
 
+- `weCallItSecurityReview` = [正しい答えを選ぶのはあなた次第です！！ 😛]
+- `Twitter handle` = `@xxxxxxx`
+
+<br/>
+<p align="center">
+<img src="./Challenge_2/solve_challenge2.png" width="900" alt="Security Challenges">
+</p>
+<br/>
+
 ### NFT チャレンジ 2
+
+<br/>
+<p align="center">
+<img src="./images/NFT_challenge_2.avif" width="200" alt="Security Challenges">
+</p>
+<br/>
 
 ## チャレンジ 3
 
