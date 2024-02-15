@@ -6,7 +6,7 @@
 
 <br/>
 <p align="center">
-<img src="https://jer-b.github.io/assets/projects_img/security.avif" width="600" alt="Foundry Challenges">
+<img src="https://jer-b.github.io/assets/projects_img/security.avif" width="600" alt="Security Challenges">
 </p>
 <br/>
 
@@ -36,7 +36,7 @@ Here are the writeups of my solutions levels I cleared.
 
 <br/>
 <p align="center">
-<img src="./images/opensea_verify.png" width="600" alt="Foundry Challenges">
+<img src="./images/opensea_verify.png" width="600" alt="Security Challenges">
 </p>
 <br/>
 
@@ -306,7 +306,7 @@ Now we have the `inputData` value → `0x5a780edd0000000000000000000000000000000
 
 <br/>
 <p align="center">
-<img src="https://jer-b.github.io/assets/projects_img/.avif" width="600" alt="Foundry Challenges">
+<img src="https://jer-b.github.io/assets/projects_img/.avif" width="600" alt="Security Challenges">
 </p>
 <br/>
 
