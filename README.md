@@ -60,8 +60,8 @@ Here are the writeups of my solutions levels I cleared.
 
 3.
 
-- Arbitrum
-- Sepolia
+- Arbitrum https://arbiscan.io/address/0x89edc4c74810bedbd53d7da677eb420dc0154b0b#code
+- Sepolia https://sepolia.etherscan.io/address/0xa2626be06c11211a44fb6ca324a67ebdbcd30b70#code
 
 4.
 
@@ -314,11 +314,108 @@ Now we have the `inputData` value → `0x5a780edd0000000000000000000000000000000
 
 ## Challenge 3
 
+- The goal is to get the value at a certain storage slot.
+- The value at storage `777`
+- And your Twitter handle.
+
+### Contract
+
+<br/>
+<p align="center">
+<img src="./Challenge_3/00_contract.png" width="900" alt="Security Challenges">
+</p>
+<br/>
+
+3.
+
+- Arbitrum https://arbiscan.io/address/0x89edc4c74810bedbd53d7da677eb420dc0154b0b#code
+- Sepolia https://sepolia.etherscan.io/address/0xa2626be06c11211a44fb6ca324a67ebdbcd30b70#code
+
+### Solution
+
+- How to solve it:
+
+1. Search about the `cast` and `storage` command of Foundry, in the [forge book](https://book.getfoundry.sh/reference/cast/cast-storage?highlight=cast%20storage#cast-storage)
+
+2. Use the below command.
+3. Or input directly on Etherscan.
+
+- Parameters:
+- `valueAtStorageLocationSevenSevenSeven` = `TheValueOfTheStorage`
+- `Twitter handle` = `@xxxxxxx`
+
+command:
+
+- IT IS OKAY TO HAVE "0X" AT THE FRONT OF YOUR PRIVATE KEY IN YOUR ENV FILE FOR THIS ONE.
+
+- Replace `$PRIVATE_KEY_TESTNET` by your private key and `$alchemy_RPC_sepolia` by your rpc url.
+- Replace `TheValueOfTheStorage` and `Twitter` by your decoded hexa code and your Twitter handle.
+
+- Get the storage hexa value at the location 777:
+
+```
+cast storage --rpc-url $alchemy_RPC_sepolia 0xA2626bE06C11211A44fb6cA324A67EBDBCd30B70 777
+```
+
+It returned: `0x000000000000000000000000000000000000000000000000000000000008a6e3`
+
+- Decode the value you got, the hexa code in the below code will change after each transaction so change it by yours:
+
+```
+cast --to-base 0x000000000000000000000000000000000000000000000000000000000008a6e3 dec
+```
+
+It returned: `567011`
+
+- Send a transaction with the above value and your Twitter handle:
+
+```
+cast send 0xA2626bE06C11211A44fb6cA324A67EBDBCd30B70 "solveChallenge(uint256,string)" 567011 @Twitter --private-key $PRIVATE_KEY_TESTNET --rpc-url $alchemy_RPC_sepolia
+
+```
+
+<br/>
+<p align="center">
+<img src="./Challenge_3/01_challenge_7_cast_dec.png" width="900" alt="Security Challenges">
+</p>
+<br/>
+
+4. Check your transaction on the blockchain explorer.
+
+<br/>
+<p align="center">
+<img src="./Challenge_3/02_challenge_7_cast.png" width="900" alt="Security Challenges">
+</p>
+<br/>
+<br/>
+<p align="center">
+<img src="./Challenge_3/03_challenge_7_cast_tx.png" width="900" alt="Security Challenges">
+</p>
+<br/>
+
+### NFT challenge 3
+
+<br/>
+<p align="center">
+<img src="./images/NFT_challenge_3.avif" width="200" alt="Security Challenges">
+</p>
+<br/>
+
+## Challenge 4
+
 ### Contract
 
 ### Solution
 
-### NFT challenge 3
+### NFT challenge 4
+
+## Challenge 5
+
+### Contract
+
+### Solution
+
+### NFT challenge 5
 
 # TO CONTINUE...
 
@@ -384,8 +481,8 @@ Now we have the `inputData` value → `0x5a780edd0000000000000000000000000000000
 
 3.
 
-- Arbitrum
-- Sepolia
+- Arbitrum https://arbiscan.io/address/0x89edc4c74810bedbd53d7da677eb420dc0154b0b#code
+- Sepolia https://sepolia.etherscan.io/address/0xa2626be06c11211a44fb6ca324a67ebdbcd30b70#code
 
 4.
 
@@ -638,8 +735,106 @@ function getSignatureTwo(uint256 nine, address contractAddress) public pure retu
 
 ## チャレンジ 3
 
+- 目的は、特定のストレージスロットの値を取得することです。
+- ストレージ `777` の値
+- そして、あなたの Twitter ハンドル。
+
+### コントラクト
+
+<br/>
+<p align="center">
+<img src="./Challenge_3/00_contract.png" width="900" alt="Security Challenges">
+</p>
+<br/>
+
+3.
+
+- Arbitrum https://arbiscan.io/address/0x89edc4c74810bedbd53d7da677eb420dc0154b0b#code
+- Sepolia https://sepolia.etherscan.io/address/0xa2626be06c11211a44fb6ca324a67ebdbcd30b70#code
+
+### 解決策
+
+- 解決方法:
+
+1. Foundry の`cast`の`storage`コマンドについて、[forge book](https://book.getfoundry.sh/reference/cast/cast-storage?highlight=cast%20storage#cast-storage)で調べる
+
+2. 下記のコマンドを使用する。
+3. または、Etherscan で直接入力する。
+
+- パラメータ:
+- `valueAtStorageLocationSevenSevenSeven` = `ストレージの値`
+- `Twitter handle` = `@xxxxxxx`
+
+コマンド:
+
+- 今回は、環境変数ファイルのプライベートキーの前に "0X" があっても大丈夫です。
+
+- `$PRIVATE_KEY_TESTNET` をあなたのプライベートキーに、`$alchemy_RPC_sepolia` をあなたの rpc url に置き換えてください。
+- `ストレージの値` と `Twitter` を 16 進値と Twitter ハンドルに置き換えてください。
+
+- 位置 777 のストレージの 16 進値を取得:
+
+```
+cast storage --rpc-url $alchemy_RPC_sepolia 0xA2626bE06C11211A44fb6cA324A67EBDBCd30B70 777
+```
+
+返された値: `0x000000000000000000000000000000000000000000000000000000000008a6e3`
+
+- 得られた値をデコードする、下記のコードの 16 進コードはトランザクションごとに変更されるので、それをあなたのものに変更してください:
+
+```
+cast --to-base 0x000000000000000000000000000000000000000000000000000000000008a6e3 dec
+```
+
+返された値: `567011`
+
+- 上記の値とあなたの Twitter ハンドルでトランザクションを送信:
+
+```
+cast send 0xA2626bE06C11211A44fb6cA324A67EBDBCd30B70 "solveChallenge(uint256,string)" 567011 @Twitter --private-key $PRIVATE_KEY_TESTNET --rpc-url $alchemy_RPC_sepolia
+```
+
+<br/>
+<p align="center">
+<img src="./Challenge_3/01_challenge_7_cast_dec.png" width="900" alt="Security Challenges">
+</p>
+<br/>
+
+4. ブロックチェーンエクスプローラであなたのトランザクションをチェックしてください。
+
+<br/>
+<p align="center">
+<img src="./Challenge_3/02_challenge_7_cast.png" width="900" alt="Security Challenges">
+</p>
+<br/>
+<br/>
+<p align="center">
+<img src="./Challenge_3/03_challenge_7_cast_tx.png" width="900" alt="Security Challenges">
+</p>
+<br/>
+
+### NFT チャレンジ 3
+
+<br/>
+<p align="center">
+<img src="./images/NFT_challenge_3.avif" width="200" alt="Security Challenges">
+</p>
+<br/>
+
+## チャレンジ 4
+
 ### コントラクト
 
 ### 解決策
 
-### NFT チャレンジ 3
+### NFT チャレンジ 4
+
+## チャレンジ 5
+
+### コントラクト
+
+### 解決策
+
+### NFT チャレンジ 5
+
+# TO CONTINUE...
