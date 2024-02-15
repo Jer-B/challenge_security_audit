@@ -403,7 +403,7 @@ Now we have the `inputData` value → `0x5a780edd0000000000000000000000000000000
 - Arbitrum
 - Sepolia
 
-## チャレンジ 0 と 1.
+## チャレンジ 0
 
 入門レベル。<br /><br />
 
