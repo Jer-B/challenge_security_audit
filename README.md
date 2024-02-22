@@ -63,10 +63,10 @@ Here are the writeups of my solutions levels I cleared.
 - Arbitrum https://arbiscan.io/address/0x89edc4c74810bedbd53d7da677eb420dc0154b0b#code
 - Sepolia https://sepolia.etherscan.io/address/0xa2626be06c11211a44fb6ca324a67ebdbcd30b70#code
 
-4.
+4. -> Bug, cannot resolve the problem
 
-- Arbitrum
-- Sepolia
+- Arbitrum https://arbiscan.io/address/0xef72ba6575b86beaa9b9e4a78bca4a58f3cce276#code
+- Sepolia https://sepolia.etherscan.io/address/0xf988ebf9d801f4d3595592490d7ff029e438deca#code
 
 5.
 
@@ -484,10 +484,10 @@ cast send 0xA2626bE06C11211A44fb6cA324A67EBDBCd30B70 "solveChallenge(uint256,str
 - Arbitrum https://arbiscan.io/address/0x89edc4c74810bedbd53d7da677eb420dc0154b0b#code
 - Sepolia https://sepolia.etherscan.io/address/0xa2626be06c11211a44fb6ca324a67ebdbcd30b70#code
 
-4.
+4. -> バグ、問題を解決できません
 
-- Arbitrum
-- Sepolia
+- Arbitrum https://arbiscan.io/address/0xef72ba6575b86beaa9b9e4a78bca4a58f3cce276#code
+- Sepolia https://sepolia.etherscan.io/address/0xf988ebf9d801f4d3595592490d7ff029e438deca#code
 
 5.
 
