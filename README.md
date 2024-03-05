@@ -489,9 +489,10 @@ About the contract I made to solve the challenge:
 <br/>
 
 - You can play around with functions and view functions, but you don't need to use `withdrawDeposit` and `onERC721Received` functions. They are helper functions just in case. To get the NFT, `onERC721Received` is required to have.
-- <br/>
+
+<br/>
   <p align="center">
-  <img src="./Challenge_4/images/02_functions.png" width="300" alt="Security Challenges">
+  <img src="./challenge_4/images/02_functions.png" width="300" alt="Security Challenges">
   </p>
   <br/>
 
@@ -1407,7 +1408,7 @@ cast send 0xA2626bE06C11211A44fb6cA324A67EBDBCd30B70 "solveChallenge(uint256,str
 
 <br/>
 <p align="center">
-<img src="./Challenge_4/images/00_contract.png" width="900" alt="Security Challenges">
+<img src="./challenge_4/images/00_contract.png" width="900" alt="Security Challenges">
 </p>
 <br/>
 
@@ -1483,6 +1484,12 @@ cast send 0xA2626bE06C11211A44fb6cA324A67EBDBCd30B70 "solveChallenge(uint256,str
 <br/>
 
 - 関数やビュー関数で遊ぶことができますが、`withdrawDeposit` および `onERC721Received` 関数を使用する必要はありません。NFT を入手するためには、`onERC721Received` が必要です。
+
+<br/>
+  <p align="center">
+  <img src="./challenge_4/images/02_functions.png" width="300" alt="Security Challenges">
+  </p>
+  <br/>
 
 #
 
