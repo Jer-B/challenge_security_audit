@@ -6,7 +6,7 @@
 
 <br/>
 <p align="center">
-<img src="https://github.com/Jer-B/challenge_security_audit/blob/main/images/badges_1.avif" width="600" alt="Security Challenges">
+<img src="./images/badges_1.avif" width="600" alt="Security Challenges">
 </p>
 <br/>
 
@@ -499,7 +499,7 @@ About the contract I made to solve the challenge:
 
 - Solving the challenge:
 
-1. Copy and paste the code that can be found here into remix. [./Challenge_4/challengeFour.sol](./Challenge_4/challengeFour.sol)
+1. Copy and paste the code that can be found here into remix. [https://github.com/Jer-B/challenge_security_audit/blob/main/challenge_4/solver.sol](https://github.com/Jer-B/challenge_security_audit/blob/main/challenge_4/solver.sol)
 
 2. To deploy the contract you will need to select the `Solver` contract with the below parameters:
 
@@ -561,7 +561,7 @@ Little helper:
 
 - There is another test included in this challenge. A short and easy fuzz test to do locally made by `Tincho`.
 - This exercice is about testing a contract with a fuzz test, to try multiple random numbers and see if the user ending balance include the money that the contract should give back whatever the initial payment is.
-- The forge setup with solution can be viewed here: [./Challenge_5/Tincho_Fuzz_test](./Challenge_5/Tincho_Fuzz_test)
+- The forge setup with solution can be viewed here: [./Challenge_5/Tincho_Fuzz_test](https://github.com/Jer-B/challenge_security_audit/tree/main/Challenge_5/Tincho_Fuzz_test)
 
 ### Contract
 
@@ -619,7 +619,7 @@ forge init --no-commit
 forge install openzeppelin/openzeppelin-contracts --no-commit
 ```
 
-- Use the path remapping of this file [./Challenge_5/fuzz_fork_test/remappings.txt](./Challenge_5/fuzz_fork_test/remappings.txt), in a file called `remappings.txt`.
+- Use the path remapping of this file [./Challenge_5/fuzz_fork_test/remappings.txt](https://github.com/Jer-B/challenge_security_audit/blob/main/Challenge_5/fuzz_fork_test/remappings.txt), in a file called `remappings.txt`.
 
 - In the `Foundry.toml` file, add the below:
 
@@ -629,11 +629,11 @@ runs = 256
 seed = '0x1'
 ```
 
-- In the `src` folder, create a file called `S5Pool.sol` and copy the code from this file into it.[./Challenge_5/fuzz_fork_test/src/S5Pool.sol](./Challenge_5/fuzz_fork_test/src/S5Pool.sol)
+- In the `src` folder, create a file called `S5Pool.sol` and copy the code from this file into it.[./Challenge_5/fuzz_fork_test/src/S5Pool.sol](https://github.com/Jer-B/challenge_security_audit/blob/main/Challenge_5/fuzz_fork_test/src/S5Pool.sol)
 
 - In the `test` folder, create an `invariant` and `mocks` folder.
 
-- In the `Mocks` folder, create a file called `S5Token.sol` and copy the code from this file into it. [./Challenge_5/fuzz_fork_test/test/mocks/S5Token.sol](./Challenge_5/fuzz_fork_test/test/mocks/S5Token.sol)
+- In the `Mocks` folder, create a file called `S5Token.sol` and copy the code from this file into it. [./Challenge_5/fuzz_fork_test/test/mocks/S5Token.sol](https://github.com/Jer-B/challenge_security_audit/blob/main/Challenge_5/fuzz_fork_test/test/mocks/S5Token.sol)
 
 - Inside the `invariant` folder create a file called `testInvariant.sol` and copy the below into it.
 
@@ -762,7 +762,7 @@ forge test --mt test_fuzz_invariant -vvvv
 
 For this solution I am not going over explaining everything as, I already went over the same thing in the fuzz test upper.
 
-1. The contract for this solution is here : [./Challenge_5/challengeFive.sol](./Challenge_5/challengeFive.sol)
+1. The contract for this solution is here : [./Challenge_5/challengeFive.sol](https://github.com/Jer-B/challenge_security_audit/blob/main/Challenge_5/challengeFive.sol)
 
 I voluntarily added a tons of `view` and `external` functions, for you to have a better understanding of the contract and more examples of how to interact with the challenge contract externaly.
 
@@ -772,7 +772,7 @@ I voluntarily added a tons of `view` and `external` functions, for you to have a
 </p>
 <br/>
 
-1. Copy and paste the code that can be found here into remix. [./Challenge_5/challengeFive.sol](./Challenge_5/challengeFive.sol)
+1. Copy and paste the code that can be found here into remix. [./Challenge_5/challengeFive.sol](https://github.com/Jer-B/challenge_security_audit/blob/main/Challenge_5/challengeFive.sol)
 
 2. To deploy the contract on sepolia you will need to select the `Solver` contract with the below parameters:
 
@@ -1488,7 +1488,7 @@ cast send 0xA2626bE06C11211A44fb6cA324A67EBDBCd30B70 "solveChallenge(uint256,str
 
 - チャレンジの解決方法：
 
-1. こちらのコードを Remix にコピーペーします。 [./Challenge_4/challengeFour.sol](./Challenge_4/challengeFour.sol)
+1. こちらのコードを Remix にコピーペーします。 [./Challenge_4/challengeFour.sol](https://github.com/Jer-B/challenge_security_audit/blob/main/challenge_4/solver.sol)
 
 2. コントラクトをデプロイするには、以下のパラメータを持つ `Solver` コントラクトを選択する必要があります：
 
@@ -1548,7 +1548,7 @@ cast send 0xA2626bE06C11211A44fb6cA324A67EBDBCd30B70 "solveChallenge(uint256,str
 
 - このチャレンジには、`Tincho`によって作られたローカルで簡単にできる短いファズテストも含まれています。
 - この練習は、ファズテストを使ってコントラクトをテストし、コントラクトが返金すべきお金を初期支払いに関係なくユーザーの最終残高に含むかどうかを複数のランダムな数値で試すことについてです。
-- forge 設定と解答例はこちらで見ることができます： [./Challenge_5/Tincho_Fuzz_test](./Challenge_5/Tincho_Fuzz_test)
+- forge 設定と解答例はこちらで見ることができます： [./Challenge_5/Tincho_Fuzz_test](https://github.com/Jer-B/challenge_security_audit/tree/main/Challenge_5/Tincho_Fuzz_test)
 
 ### コントラクト
 
@@ -1614,13 +1614,13 @@ runs = 256
 seed = '0x1'
 ```
 
-- このファイルのパスリマッピング[./Challenge_5/fuzz_fork_test/remappings.txt](./Challenge_5/fuzz_fork_test/remappings.txt)を、`remappings.txt`というファイルで使用します。
+- このファイルのパスリマッピング[./Challenge_5/fuzz_fork_test/remappings.txt](https://github.com/Jer-B/challenge_security_audit/blob/main/Challenge_5/fuzz_fork_test/remappings.txt)を、`remappings.txt`というファイルで使用します。
 
-- `src`フォルダー内に、`S5Pool.sol`というファイルを作成し、このファイルからのコードをそれにコピーします。[./Challenge_5/fuzz_fork_test/src/S5Pool.sol](./Challenge_5/fuzz_fork_test/src/S5Pool.sol)
+- `src`フォルダー内に、`S5Pool.sol`というファイルを作成し、このファイルからのコードをそれにコピーします。[./Challenge_5/fuzz_fork_test/src/S5Pool.sol](https://github.com/Jer-B/challenge_security_audit/blob/main/Challenge_5/fuzz_fork_test/src/S5Pool.sol)
 
 - `test`フォルダー内に、`invariant`と`mocks`フォルダーを作成します。
 
-- `Mocks`フォルダー内に、`S5Token.sol`というファイルを作成し、このファイルからのコードをそれにコピーします。 [./Challenge_5/fuzz_fork_test/test/mocks/S5Token.sol](./Challenge_5/fuzz_fork_test/test/mocks/S5Token.sol)
+- `Mocks`フォルダー内に、`S5Token.sol`というファイルを作成し、このファイルからのコードをそれにコピーします。 [./Challenge_5/fuzz_fork_test/test/mocks/S5Token.sol](https://github.com/Jer-B/challenge_security_audit/blob/main/Challenge_5/fuzz_fork_test/test/mocks/S5Token.sol)
 
 - `invariant`フォルダー内に、`testInvariant.sol`というファイルを作成し、以下をそれにコピーします。
 
@@ -1750,7 +1750,7 @@ forge test --mt test_fuzz_invariant -vvvv
 
 この解決策については、上で行ったファズテストと同じことを説明するので、説明を省略します。
 
-1. この解決策のコントラクトはこちらにあります: [./Challenge_5/challengeFive.sol](./Challenge_5/challengeFive.sol)
+1. この解決策のコントラクトはこちらにあります: [./Challenge_5/challengeFive.sol](https://github.com/Jer-B/challenge_security_audit/blob/main/Challenge_5/challengeFive.sol)
 
 より良い理解と、チャレンジコントラクトとの外部からのやり取りの例を提供するために、多くの`view`および`external`関数を故意に追加しました。
 
@@ -1760,9 +1760,9 @@ forge test --mt test_fuzz_invariant -vvvv
 </p>
 <br/>
 
-2. こちらにあるコードを Remix にコピー＆ペーストしてください。 [./Challenge_5/challengeFive.sol](./Challenge_5/challengeFive.sol)
+1. こちらにあるコードを Remix にコピー＆ペーストしてください。 [./Challenge_5/challengeFive.sol](https://github.com/Jer-B/challenge_security_audit/blob/main/Challenge_5/challengeFive.sol)
 
-3. Sepolia にコントラクトをデプロイするためには、以下のパラメーターで`Solver`コントラクトを選択する必要があります:
+2. Sepolia にコントラクトをデプロイするためには、以下のパラメーターで`Solver`コントラクトを選択する必要があります:
 
 - Sepolia コントラクトアドレス。
 - チャレンジ用に使用される NFT コントラクトアドレス。
