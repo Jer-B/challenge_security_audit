@@ -413,7 +413,7 @@ cast send 0xA2626bE06C11211A44fb6cA324A67EBDBCd30B70 "solveChallenge(uint256,str
 
 <br/>
 <p align="center">
-<img src="./Challenge_4/images/00_contract.png" width="800" alt="Security Challenges">
+<img src="./challenge_4/images/00_contract.png" width="900" alt="Security Challenges">
 </p>
 <br/>
 
