@@ -1,0 +1,12 @@
+[submodule "Challenge_5/Tincho_Fuzz_test/lib/forge-std"]
+	path = Challenge_5/Tincho_Fuzz_test/lib/forge-std
+	url = https://github.com/foundry-rs/forge-std
+[submodule "Challenge_5/fuzz_fork_test/lib/forge-std"]
+	path = Challenge_5/fuzz_fork_test/lib/forge-std
+	url = https://github.com/foundry-rs/forge-std
+[submodule "Challenge_5/dddd/lib/forge-std"]
+	path = Challenge_5/dddd/lib/forge-std
+	url = https://github.com/foundry-rs/forge-std
+[submodule "Challenge_5/fuzz_fork_test/lib/openzeppelin-contracts"]
+	path = Challenge_5/fuzz_fork_test/lib/openzeppelin-contracts
+	url = https://github.com/openzeppelin/openzeppelin-contracts
