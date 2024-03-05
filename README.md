@@ -6,7 +6,7 @@
 
 <br/>
 <p align="center">
-<img src="https://jer-b.github.io/assets/projects_img/security.avif" width="600" alt="Security Challenges">
+<img src="https://github.com/Jer-B/challenge_security_audit/blob/main/images/badges_1.avif" width="600" alt="Security Challenges">
 </p>
 <br/>
 
@@ -1002,7 +1002,7 @@ assertEq(
 
 <br/>
 <p align="center">
-<img src="https://jer-b.github.io/assets/projects_img/.avif" width="600" alt="Security Challenges">
+<img src="./images/badges_1.avif" width="600" alt="Security Challenges">
 </p>
 <br/>
 
